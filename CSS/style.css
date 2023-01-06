@@ -1,0 +1,879 @@
+/* Glouble Rouls */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #37638a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.fyp-app .continer .menu .content .dep a:hover i {
+    color: black;
+}
+
+
+/* Glouble Rouls end */
+
+
+/* fyp-app  */
+
+.fyp-app {
+    width: 1400px;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #363946;
+    padding: 8px;
+    color: white;
+    /* Change */
+    z-index: 1;
+}
+
+.fyp-app .continer {
+    display: flex;
+    border: 1px solid gray;
+    background-image: url(/Image/background.jpg);
+    background-size: cover;
+    height: 97vh;
+    overflow: hidden;
+}
+
+.fyp-app .continer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* menu */
+
+.fyp-app .continer .menu {
+    background-color: var(--main-color);
+    width: 320px;
+    /* height: 98vh; */
+    padding: 20px;
+    border-top-right-radius: 26px 26px;
+    border-bottom-right-radius: 20px 26px;
+    z-index: 444;
+}
+
+.fyp-app .continer .menu .head {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fyp-app .continer .menu .head .img {
+    width: 80px;
+}
+
+.fyp-app .continer .menu .head .img img {
+    width: 100%;
+}
+
+.fyp-app .continer .menu .head .text {
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+
+.fyp-app .continer .menu .content {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.fyp-app .continer .menu .content .dep {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.fyp-app .continer .menu .content .dep::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -110px;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 0;
+    background-color: white;
+    transition: height 0.3s linear;
+    -webkit-transition: height 0.3s linear;
+    -moz-transition: height 0.3s linear;
+    -ms-transition: height 0.3s linear;
+    -o-transition: height 0.3s linear;
+}
+
+.fyp-app .continer .menu .content .dep:hover::before {
+    height: 20px;
+}
+
+.fyp-app .continer .menu .content .dep a {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* menu end*/
+
+
+/* no-drop */
+
+.fyp-app .continer .no-drop {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    height: 97vh;
+    z-index: 33;
+    display: none;
+}
+
+.fyp-app .continer .no-drop::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 117, 159, 0.7);
+    z-index: 222;
+}
+
+.fyp-app .continer .no-drop i {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    z-index: 333;
+}
+
+
+/* no-drop end */
+
+
+/* media */
+
+.fyp-app .continer .menu .content .deps .nav {
+    display: none;
+}
+
+.fyp-app .continer .menu .content .deps .nav .info {
+    display: flex;
+    gap: 10px;
+}
+
+.fyp-app .continer .menu .content .deps .nav .info .icon {
+    display: flex;
+    gap: 15px;
+}
+
+.fyp-app .info i {
+    cursor: pointer;
+}
+
+.fyp-app .continer .phone-nav {
+    cursor: pointer;
+}
+
+
+/* media end*/
+
+
+/* phone media */
+
+.fyp-app .continer .phone-nav {
+    position: relative;
+    color: white;
+    display: none;
+    padding: 15px 30px;
+    background-color: var(--main-color);
+}
+
+.fyp-app .continer .phone-nav .infos {
+    display: flex;
+    gap: 30px;
+}
+
+.fyp-app .continer .phone-nav .infos .info {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* phone media end */
+
+
+/* home */
+
+.fyp-app .continer .home {
+    position: relative;
+    background-size: cover;
+    width: calc(100% - 320px);
+    padding: 20px 40px;
+}
+
+
+/* nav */
+
+.fyp-app .continer .home .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 5px;
+    border-radius: 99999px;
+    background-color: #e5e9eb;
+    -webkit-border-radius: 99999px;
+    -moz-border-radius: 99999px;
+    -ms-border-radius: 99999px;
+    -o-border-radius: 99999px;
+}
+
+.fyp-app .continer .home .nav .sear {
+    position: relative;
+    width: calc(100% - 320px);
+}
+
+.fyp-app .continer .home .nav .sear i {
+    color: black;
+    position: absolute;
+    top: 17px;
+    transform: translateY(-50%);
+    left: 13px;
+}
+
+.fyp-app .continer .home .nav .sear input {
+    width: calc(100vw - 620px);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    background-color: #eef3f6;
+}
+
+.fyp-app .continer .home .nav .sear input:focus {
+    outline: none;
+    border: 1px solid var(--main-color);
+}
+
+.fyp-app .continer .home .nav .sear input::placeholder {
+    color: black;
+}
+
+.fyp-app .continer .home .nav .info {
+    display: flex;
+    margin-right: 40px;
+    color: black;
+}
+
+.fyp-app .continer .home .nav .info .icon {
+    margin-right: 10px;
+}
+
+
+/* nav end */
+
+
+/* content */
+
+.fyp-app .continer .home .content {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fyp-app .continer .home .content h4 {
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: black;
+}
+
+.fyp-app .continer .home .content .get {
+    margin-top: 60px;
+}
+
+.fyp-app .continer .home .content .get button {
+    background-color: #e5e9eb;
+    color: black;
+    padding: 7px 40px;
+    letter-spacing: 2px;
+    width: 176px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+}
+
+.fyp-app .continer .home .content .get button:hover {
+    background-color: #7598b2;
+}
+
+
+/* content end */
+
+
+/* home end */
+
+
+/* fyp-app end  */
+
+
+/* ---- Login ----- */
+
+.fyp-app .continer-log {
+    display: flex;
+    border: 1px solid gray;
+    background-image: url(/Image/background.jpg);
+    background-size: cover;
+    height: 97vh;
+}
+
+.fyp-app .continer-log::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fyp-app .continer-log .card {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 320px);
+    margin-top: 45px;
+}
+
+.fyp-app .continer-log .card .content {
+    width: 95%;
+    height: 350px;
+    /* background-color: var(--main-color); */
+    display: flex;
+}
+
+.fyp-app .continer-log .card .content .left-card {
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fyp-app .continer-log .card .content .left-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(71, 117, 159, 0.7);
+}
+
+.fyp-app .continer-log .card .content .left-card .head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.fyp-app .continer-log .card .content .left-card .head .img {
+    width: 80px;
+}
+
+.fyp-app .continer-log .card .content .left-card .head .img img {
+    width: 100%;
+}
+
+.fyp-app .continer-log .card .content .left-card .head h4 {
+    letter-spacing: 5px;
+}
+
+.fyp-app .continer-log .card .content .left-card .text {
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+.fyp-app .continer-log .card .content .left-card .text p {
+    letter-spacing: 4px;
+}
+
+.fyp-app .continer-log .card .content .right-card {
+    background-color: var(--main-color);
+    width: 60%;
+    padding: 40px 80px;
+    position: relative;
+}
+
+
+/* Edit For right-card-sign */
+
+.fyp-app .continer-log .card .content .right-card-sign {
+    padding: 20px 10px;
+}
+
+
+/* Edit For right-card-sign end */
+
+.fyp-app .continer-log .card .content .right-card form div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    color: #9abeda;
+    letter-spacing: 3px;
+}
+
+
+/* Edit For right-card-sign */
+
+.fyp-app .continer-log .card .content .right-card-sign form div {
+    margin: 7px 0;
+}
+
+
+/* Edit For right-card-sign end */
+
+.fyp-app .continer-log .card .content .right-card form p {
+    width: fit-content;
+    margin: 0 auto;
+    color: #9abeda;
+}
+
+.fyp-app .continer-log .card .content .right-card form .cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.fyp-app .continer-log .card .content .right-card form div label {
+    margin: 0 0 4px 10px;
+    letter-spacing: 2px;
+}
+
+
+/* Edit With Select in Setting */
+
+.fyp-app .continer-log .card .content .right-card form div input,
+select {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+}
+
+.fyp-app .continer-log .card .content .right-card form div a {
+    color: #7598b2;
+}
+
+.fyp-app .continer-log .card .content .right-card form div a:hover {
+    color: #9abeda;
+}
+
+.fyp-app .continer-log .card .content .right-card form .btn {
+    width: 39%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.fyp-app .continer-log .card .content .right-card form .btn input {
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    margin: 0 auto;
+}
+
+.fyp-app .continer-log .card .content .right-card form .btn input:hover {
+    background-color: #7598b2;
+}
+
+
+/* Login end */
+
+
+/* Service */
+
+.fyp-app .continer .boxes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.fyp-app .continer .boxes .in-boxes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.fyp-app .continer .boxes .in-boxes .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    height: 155px;
+}
+
+.fyp-app .continer .boxes .box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(113, 144, 172, 0.7);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.fyp-app .continer .boxes .in-boxes .box .contain {
+    position: relative;
+    text-align: center;
+    color: #cde4f6;
+    letter-spacing: 2px;
+}
+
+.fyp-app .continer .boxes .in-boxes .box .contain i {
+    margin-bottom: 20px;
+}
+
+
+/* Service end*/
+
+
+/* Respons All */
+
+
+/* Profile */
+
+.fyp-app .continer .profile-content {
+    position: relative;
+}
+
+.fyp-app .continer .profile-content .content {
+    position: relative;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.fyp-app .continer .profile-content .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 117, 159, 0.7);
+}
+
+.fyp-app .continer .profile-content .content .title {
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.fyp-app .continer .profile-content .content .detail {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.fyp-app .continer .profile-content .content .detail .icon {
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.fyp-app .continer .profile-content .content .detail .icon i {
+    font-size: 150px;
+    color: rgba(71, 117, 159);
+}
+
+.fyp-app .continer .profile-content .content .detail .data {
+    letter-spacing: 3px;
+    line-height: 1.7;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fyp-app .continer .profile-content .content .detail .data span {
+    color: #ccc;
+}
+
+.fyp-app .continer .profile-content .content .tools,
+.edit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3, minmax(150px, 1fr)); */
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 30px 0;
+}
+
+.fyp-app .continer .profile-content .content .tools p,
+.edit button {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 20px 50px;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.fyp-app .continer .profile-content .content .tools p:hover {
+    background-color: rgba(71, 117, 159, 0.7);
+    color: #ccc;
+}
+
+.fyp-app .continer .profile-content .content .edit {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.fyp-app .continer .profile-content .content .edit button {
+    border: none;
+    font-size: 18px;
+    padding: 10px 50px;
+}
+
+.fyp-app .continer .profile-content .content .edit button:hover {
+    background-color: rgba(71, 117, 159, 0.7);
+    color: #ccc;
+}
+
+
+/* mak content shown */
+
+.fyp-app .continer .profile-content .content div {
+    position: relative;
+}
+
+
+/* Profile end */
+
+
+/* tablit  & phone*/
+
+@media (max-width:991px) {
+    .fyp-app .continer-log .card .content {
+        flex-direction: column;
+        width: 100%;
+        /* gap: 10px; */
+    }
+    .fyp-app .continer-log .card .content .left-card {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .fyp-app .continer-log .card .content .right-card {
+        background-color: var(--main-color);
+        padding: 40px 80px;
+        width: 100%;
+    }
+    .fyp-app .continer-log .card .content .right-card-sign {
+        padding: 20px 10px;
+    }
+    .fyp-app .continer-log .card {
+        margin-top: 25px;
+        width: initial;
+        align-items: initial;
+    }
+    /* service */
+    .fyp-app .continer .boxes {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+    .fyp-app .continer {
+        display: block;
+        height: 100%;
+    }
+    .fyp-app .continer .menu {
+        background-color: var(--main-color);
+        width: 100%;
+        display: flex;
+        height: 80px;
+        gap: 40px;
+        align-items: center;
+        border-radius: 0;
+        position: relative;
+    }
+    .fyp-app .continer .menu .head {
+        align-items: center;
+        z-index: 1;
+    }
+    .fyp-app .continer .menu .head .img {
+        width: 60px;
+    }
+    .fyp-app .continer .menu .content {
+        margin-top: 0;
+    }
+    .fyp-app .continer .menu .content .deps {
+        display: flex;
+        gap: 20px;
+        z-index: 1;
+    }
+    .fyp-app .continer .menu .content .deps .dep::before {
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0px;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s linear;
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        -ms-transition: width 0.3s linear;
+        -o-transition: width 0.3s linear;
+    }
+    .fyp-app .continer .menu .content .deps .dep.dep:hover::before {
+        width: 100%;
+    }
+    .fyp-app .continer .menu .content .dep a i {
+        display: none;
+    }
+    .fyp-app .continer .menu .content .deps .nav {
+        display: flex;
+        gap: 30px;
+    }
+    .fyp-app .continer .home {
+        position: relative;
+        background-size: cover;
+        width: initial;
+        padding: initial;
+    }
+    .fyp-app .continer .home .nav {
+        display: none;
+    }
+    /* Login */
+    /* .fyp-app .continer-log .card {
+    margin-top: 25px;
+    width: initial;
+} */
+}
+
+
+/* tablit end*/
+
+
+/* Phone */
+
+@media (max-width:768px) {
+    .fyp-app .continer {
+        flex-direction: column;
+    }
+    .fyp-app .continer .menu {
+        background-color: #37638a;
+        display: none;
+    }
+    .fyp-app .continer .home {
+        /* width: calc(100% - 320px); */
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    /* Hiddn Befor To Solve Problem */
+    .fyp-app .continer .menu .content .dep::before {
+        display: none;
+    }
+    .fyp-app .continer .home .nav {
+        display: none;
+    }
+    .fyp-app .continer .home .content .text {
+        padding-left: 15px;
+    }
+    .fyp-app .continer .home .content .get {
+        flex-direction: column;
+        margin-top: 60px;
+        display: flex;
+        gap: 40px;
+    }
+    .fyp-app .continer .phone-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* profile */
+    .fyp-app .continer .profile-content .content {
+        margin-top: 30px;
+    }
+    .fyp-app .continer .profile-content .content .detail .icon {
+        display: none;
+    }
+    .fyp-app .continer .profile-content .content .tools,
+    .edit {
+        gap: 15px;
+        margin: 15px 0 15px 0;
+    }
+    /* profile end */
+}
+
+
+/* Phone end */
+
+
+/* Respons All end */
